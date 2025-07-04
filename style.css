@@ -2,3 +2,37 @@
 h1 {
   color: red; /* This makes the text inside <section> red */
 }
+
+/* Simple responsive navigation bar styles */
+.navbar {
+  display: flex; /* Arrange items in a row */
+  justify-content: space-between; /* Space out title and link */
+  align-items: center; /* Center items vertically */
+  background-color: #222; /* Dark background */
+  padding: 10px 20px;
+}
+.nav-title {
+  color: #fff; /* White text for the title */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.nav-link {
+  color: #fff; /* White text for the link */
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.nav-link:hover {
+  background: #444; /* Slightly lighter on hover */
+}
+/* Responsive: stack nav items on small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-link {
+    margin-top: 8px;
+  }
+}
