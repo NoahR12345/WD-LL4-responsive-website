@@ -1,0 +1,4 @@
+/* This CSS rule makes all <section> elements have red text */
+h1 {
+  color: red; /* This makes the text inside <section> red */
+}
